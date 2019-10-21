@@ -1,0 +1,43 @@
+1.将两个字符利用字符串对象的方法变成一个字符,显示在页面id为h1的元素中
+答:<h1 id="h1"></h1>
+        <script>
+          var str = 'ds';
+          var strs = 'cd';
+          var h1 = document.getElementById('h1');
+          var a = str.concat(strs)
+          h1.innerHTML= a;
+        </script>
+
+2.一个富豪想存87万,给理财顾问写了87w,请自动生成存储870000的方法,显示在页面id为h2的元素中
+答: <h2 id="h2"></h2>
+        <script>
+          var h2 = document.getElementById('h2');
+          var m = '87w';
+          var nm = m.substr(0,2);
+          console.log(nm);
+          var p = nm.padEnd(6,'0');
+          h2.innerHTML = p;
+        </script>
+
+3.一个数字79387.348的工程款,保留两位小数存入,显示在页面id为h3的元素中
+答:  <h4 id="h3"></h4>
+        <script>
+                var num =new Number(79387.348);
+                console.log(num.toFixed(2));
+                console.log(h3);
+              h3.innerHTML = num.toFixed(2);
+               </script>
+
+4.一张图片是一个相对路径img/head/,icon/1.jpg,我只需要拿到它的文件夹目录后显示在页面id为h4的元素中
+答: <h4 id="h4"></h4>
+    <script>
+     var h4 = document.getElementById('h4');
+     var str = 'img/head/icon/1.jpg';
+      var nstr1 = str.substring(0,13);
+      console.log(nstr1);
+      console.log(h4);
+      h4.innerHTML = nstr1;
+    </script>
+
+5.用户输入验证码,无论大小写输入都会正确的方法,显示在页面id为h1的元素中,显示在页面id为h4的元素中
+答:
