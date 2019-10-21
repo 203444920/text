@@ -1,8 +1,22 @@
 1.将两个字符利用字符串对象的方法变成一个字符,显示在页面id为h1的元素中
 答:
-
+ <script>
+          var str = 'ds';
+          var strs = 'cd';
+          var h1 = document.getElementById('h1');
+          var a = str.concat(strs)
+          h1.innerHTML= a;
+        </script>
 2.一个富豪想存87万,给理财顾问写了87w,请自动生成存储870000的方法,显示在页面id为h2的元素中
-答:
+答:<h2 id="h2"></h2>
+        <script>
+          var h2 = document.getElementById('h2');
+          var m = '87w';
+          var nm = m.substr(0,2);
+          console.log(nm);
+          var p = nm.padEnd(6,'0');
+          h2.innerHTML = p;
+        </script>
 
 3.一个数字79387.348的工程款,保留两位小数存入,显示在页面id为h3的元素中
 答:  <h4 id="h3"></h4>
