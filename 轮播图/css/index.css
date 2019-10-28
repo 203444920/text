@@ -1,0 +1,94 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #d5d5d5;
+        }
+
+        .tab {
+            width: 600px;
+            height: 400px;
+            margin: 20px auto;
+            position: relative;
+            box-shadow: 5px 5px 8px #333;
+        }
+
+        .pic {
+            width: 600px;
+            height: 400px;
+        }
+
+        .pic>div {
+            display: none;
+        }
+        .pic1{
+        	position: absolute;
+        	top:0px;
+        	left:600px;
+        }
+         .pic1>div {
+            display: none;
+        }
+        .num {
+            position: absolute;
+            width: 500px;
+            right: 50px;
+           margin-top:10px;
+           z-index: 50;
+        }
+
+        .num a {
+        	width:60px;
+        	height:40px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 13px;
+            display: inline-block;
+            background-color: #222;
+            color: white;
+            box-shadow: 0 0 4px #ddd;
+            float: left;
+            margin-left:20px;
+        }
+
+        .control {
+            color: white;
+            font-size:30px;
+            width: 100%;
+            position: absolute;
+            z-index: 30px;
+            top: 410px;
+            overflow: hidden;
+            margin-top:10px;
+        }
+
+        .control span {
+            display: block;
+            width: 30px;
+            height:30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height:25px;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.6);
+            
+        }
+
+        .control span:nth-child(1) {
+            float: left;
+         
+        }
+
+        .control span:nth-child(2) {
+            float: right;
+        }
+
+        .num .active {
+            background-color: #bbb;
+            box-shadow: 0 0 5px #333;
+            transform: scale(1.1);
+            color: #222;
+            font-weight: 600;
+        }
